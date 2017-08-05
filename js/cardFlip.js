@@ -22,8 +22,9 @@
       console.log(selectedCards);
       if(cardNumber == 2){
         chances++;
+        document.getElementById('score').innerHTML = "<h1>"+chances+"</h1>"
         if(selectedCards[1].getElementsByTagName('img')[0].src != selectedCards[0].getElementsByTagName('img')[0].src){
-          setTimeout((reverseCards)(selectedCards),1000);
+          setTimeout((reverseCards)(selectedCards),500);
         }else{
           hitCount++;
           if(hitCount == 8){
