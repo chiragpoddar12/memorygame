@@ -12,10 +12,13 @@
         <div class="container">
             <div class="row" >
                 <div class="col-xs-4" id="reset">
-                    <button onclick="reset()" type="button" class="btn btn-default btn-lg">Reset</button>
+                    <button onclick="onReset()" type="button" class="btn btn-default btn-lg">Reset</button>
                 </div>
-                <div class="col-xs-4 text-center" id="score">
-                    <!-- <h1>0</h1> -->
+                <div class="col-xs-4 text-center" id="board">
+                    <div class="row">
+                        <div class="col-xs-4" id="score"></div>
+                        <div class="col-xs-8" id="timer"></div>
+                    </div>
                 </div>
                 <div class="col-xs-4 text-right" id="rating">
                 </div>
