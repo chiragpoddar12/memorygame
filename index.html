@@ -4,6 +4,7 @@
         <title>Memory Game</title>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!--Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
@@ -11,13 +12,12 @@
         <div class="container">
             <div class="row" >
                 <div class="col-xs-4" id="reset">
-                    <button onclick="reset()">Click me</button>
+                    <button onclick="reset()" type="button" class="btn btn-default btn-lg">Reset</button>
                 </div>
                 <div class="col-xs-4 text-center" id="score">
-                    <h1>0</h1>
+                    <!-- <h1>0</h1> -->
                 </div>
                 <div class="col-xs-4 text-right" id="rating">
-
                 </div>
             </div>
             <div id="memory">

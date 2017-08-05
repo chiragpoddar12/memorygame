@@ -72,3 +72,17 @@
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
 }
+
+#reset{
+  padding-top: 2%;
+}
+
+#rating{
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+}
+
+.glyphicon {
+    font-size: 30px;
+    color: #FFDF00;
+}
