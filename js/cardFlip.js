@@ -51,7 +51,7 @@ function clickListener(card) {
       if(!c.contains("flipped")){
         c.add("flipped");
       }
-      console.log(selectedCards);
+      // console.log(selectedCards);
       if(cardNumber == 2){
         chances++;
         if(chances<10){
@@ -70,7 +70,10 @@ function clickListener(card) {
         }else{
           hitCount++;
           if(hitCount == 8){
-            setTimeout(function(){alert("You won in " + chances + " chances")}, 300);
+            clearInterval(timer);
+            document.getElementById("modalScore").innerHTML = "<h3>You won in "+ chances +"</h3>";
+            document.getElementById("modalTime").innerHTML = "<h3>Time Taken : " + time + "</h3>";
+            $('#myModal').modal('show');
           }
         }
         selectedCards = [];
@@ -91,6 +94,7 @@ function onReset(){
   hitCount = 0;
   chances = 0;
   console.log(cards)
+  $("#myModal").modal('hide');
   for ( var i  = 0, len = cards.length; i < len; i++ ) {
     var card = cards[i];
     if(card.classList.contains("flipped")){
